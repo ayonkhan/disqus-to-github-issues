@@ -209,7 +209,7 @@ namespace DisqusToGithubIssues
                 }
 
                 var newIssue = new NewIssue(thread.Title);
-                newIssue.Body = $@"Written on {thread.CreatedAt} 
+                newIssue.Body = $@"Written at {thread.CreatedAt} 
 
 URL: {thread.Url}
 ";
@@ -220,7 +220,7 @@ URL: {thread.Url}
 
                 foreach (var post in thread.Posts)
                 {
-                    var message = $@"Comment written by **{post.Author}** on **{post.CreatedAt}**
+                    var message = $@"Comment written by **{post.Author}** at **{post.CreatedAt}**
 
 {post.Message}
 ";
