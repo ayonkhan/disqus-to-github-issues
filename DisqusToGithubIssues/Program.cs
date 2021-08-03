@@ -109,8 +109,7 @@ namespace DisqusToGithubIssues
 
         private static async Task<bool> CheckThreadUrl(string url)
         {
-            if (!url.StartsWith("http://asp.net-hacker.rocks") &&
-               !url.StartsWith("https://asp.net-hacker.rocks"))
+            if (!url.StartsWith("https://www.ayonkhan.me"))
             {
                 return false;
             }
